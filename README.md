@@ -39,3 +39,36 @@ Sources
 American Forests. (n.d.). Tree Equity Score. American Forests. Retrieved from https://www.americanforests.org/tools-research-reports-and-guides/tree-equity-score/
 Rettner, R. (April 19, 2016). How the Plants Around Your Home May Affect Your Life Span. Live Science. Retrieved from https://www.livescience.com/54463-vegetation-mortality.html
 Safford, H., Larry, E., McPherson, E.G., Nowak, D.J., and Westphal, L.M.. (August 2013). Urban Forests and Climate Change. U.S. Department of Agriculture, Forest Service, Climate Change Resource Center. Retrieved from www.fs.usda.gov/ccrc/topics/urban-forests 
+
+Project Staus Update - April 7, 2022
+
+Visualization 1 – Bubble Chart:
+<img width="452" alt="image" src="https://user-images.githubusercontent.com/34941328/162500767-51a31e21-18d7-4730-9aa4-e438b23ea841.png">
+
+Visualization 2 – Scatter Chart:
+
+<img width="452" alt="image" src="https://user-images.githubusercontent.com/34941328/162501041-a0b73b30-e952-4b4b-bc11-74d872493a80.png">
+
+Visualization 3 – Slope Chart:
+
+<img width="452" alt="image" src="https://user-images.githubusercontent.com/34941328/162501087-81d8f3c8-3203-483d-ac55-17d5e56a1a40.png">
+
+Visualization 4 – Tree Map:
+
+<img width="452" alt="image" src="https://user-images.githubusercontent.com/34941328/162501219-43e40512-f6fc-4e29-bf5a-a924897fb661.png">
+
+
+Modifications:
+Overall, our implementation so far aligns well with our proposal. We have started the implementation of visualizations 2-5 of the design sheet 5. As visualization 1 will combine elements of both the choropleth map and the tree map, we decided to implement it only after we have finished the initial implementations of these two visualisations. In our initial design, the map directly plotting trees was a small multiples visualization showing how the number of trees decreased over time. When plotting this visualization, however, we found that the decrease is difficult to spot in a small multiples format. When enabling users to switch between years, however, the decrease is more apparent. In the observable notebook accompanying this status update, we included both versions. However, currently we are leaning more towards the user input (not small multiple) version of this visualization for the final product.
+
+Libraries/Software:
+So far, we are using observable input objects to get interactive user input. These are easy to use, but not as customizable as they would be if we implemented buttons and other input elements ourselves. For some of the geographic data wrangling, we used ArcGIS. We also used it to make the map directly plot trees. For data cleaning and managing of non-geographic data, we used R and Excel. Other than this, we mainly used D3.
+Implementation Approach:
+Our initial implementation approach was to divide the individual visualizations up so that everyone is responsible for one visualization. However, we also organized a working session in which we worked on the project and helped each other. This approach has worked well so far, and thus we want to keep the division of responsibilities.
+
+Features and Schedule:
+We are slightly ahead of schedule, as we did not expect to be able to add any interactivity this early. Because of this, we are debating whether to move from observable to building a regular website once we finished our visualizations. We are hoping that this would give us the ability to further customize the final design of the project. However, we have not decided if we want to move in this direction yet.
+
+
+Link to Observable:
+https://observablehq.com/@efa8bf212e62395b/distreebution
